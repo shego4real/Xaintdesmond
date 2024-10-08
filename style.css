@@ -82,13 +82,17 @@ nav ul li a:hover::after {
   justify-content: space-between;
 }
 #home {
-  background-image: url("./Images/Image\ 1.jpg");
-  background-position: bottom right;
-  background-size: 500px;
+  background-image: url("./Images/desmond-edited.jpg");
+  background-position: 0 -200px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .container {
   padding: 10px 10%;
+}
+.p-h1 p {
+  color: #fff;
+  text-align: center;
 }
 h1 span {
   color: #ff9209;
@@ -162,6 +166,10 @@ header.dark-mode {
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+}
+.work div p a {
+  text-decoration: none;
+  color: #ff9209;
 }
 .contact-left {
   flex-basis: 35%;
