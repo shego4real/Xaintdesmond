@@ -1,315 +1,1377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--
+
+Page    : Home Page
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-->
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Music Artist Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xaint Desmond</title>
+    <meta
+      name="description"
+      content="Xaint Desmond is a music brand emanating from Africa and making waves in Europe"
     />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900%7CMontserrat:400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Bootstrap -->
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet" />
+    <!-- Plugins CSS -->
+    <link href="css/plugins/plugins-combined.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/lib/modernizr-min.js"></script>
     <script
-      src="https://kit.fontawesome.com/ecee23c751.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9214562210201551"
-      crossorigin="anonymous"
-    ></script>
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9214562210201551"
+    crossorigin="anonymous"
+  ></script>
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./Images/Logo.jpg" alt="Artist Logo" />
+
+  <body id="top" class="preload">
+    <!-- ============================================================
+     PAGE LOADING 
+     ============================================================ -->
+    <div id="page-loader" class="loading-wrap">
+      <span class="loading-text">Loading...</span>
+      <div class="loading-bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-      <nav id="sidemenu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i
-          class="fa-sharp fa-solid fa-circle-xmark fas"
-          onclick="closemenu()"
-        ></i>
-      </nav>
-      <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
-      <!-- <div class="toggle-container">
-        <input type="checkbox" id="dark-mode-toggle" />
-        <label for="dark-mode-toggle">Dark Mode</label>
-      </div> -->
+    </div>
+    <!-- // End Page Loading -->
+    <!-- ============= FLEXBOX AUDIO PLAYER ============== -->
+    <!-- <div class="audio-player">
+      <a href="javascript:;" class="hide_player"
+        ><i class="fa fa-angle-down"></i> HIDE</a
+      >
+      <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+      <!-- Audio Player -->
+      <!-- Visual Container -->
+   
+    <!-- //End Fixed Audio Player -->
+    <!-- ================= HEADER ================= -->
+    <nav class="navbar navbar-default navbar-fixed-top js-on-scroll">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="flaticon-interface"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><h2 id="nav-logo">Xaint Desmond</h2></a
+          >
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="menu-trigger">
+            <a href="#">
+              <span class="flaticon-interface"></span>
+            </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right toggle-menu">
+            <li><a href="#top">HOME </a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <!-- <li><a href="#events">EVENTS</a></li> -->
+            <li><a href="#album">My Music</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PAGES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index_multipage.html">Multipage Version</a></li>
+                            <li><a href="album-single.html">Album Single</a></li>
+                            <li><a href="event-countdown.html">Event Countdown</a></li>
+                            <li><a href="coming-soon.html">Coming soon</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="blog.html">Blog List</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                        </ul>
+                    </li> -->
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- ============================================================
+         Header Slider
+         ============================================================ -->
+    <header class="slider-bg has-parallax" id="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 clearfix">
+            <div class="slider-wrap">
+              <div class="header-slider">
+                <div class="header-slide">
+                  <div class="hero-wrap">
+                    <div class="no-overflow">
+                      <div class="hero-block">
+                        <h1 class="hero-title">His praise shall continually</h1>
+                        <h1 class="hero-text">be in my mouth</h1>
+                        <span class="attr"> &mdash; Psalm 34 : 1b</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // end .header-slide -->
+                <div class="header-slide">
+                  <div class="hero-wrap">
+                    <div class="no-overflow">
+                      <div class="hero-block">
+                        <h1 class="hero-title hero-title-fit1">
+                          Music is the Universal
+                        </h1>
+                        <h1 class="hero-text">language of Mankind.</h1>
+                        <span class="attr">
+                          &mdash; Henry Wadsworth Longfellow</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // end .header-slide -->
+                <div class="header-slide">
+                  <div class="hero-wrap">
+                    <div class="no-overflow">
+                      <div class="hero-block">
+                        <h1 class="hero-title hero-title-fit">
+                          Praise the lord O my soul
+                        </h1>
+                        <h1 class="hero-text">and all that is within me</h1>
+                        <span class="attr"> &mdash; Psalm 103 : 1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // end .header-slide -->
+              </div>
+              <!-- // end .header-slider -->
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-
-    <section id="home" class="section">
-      <div class="header-text">
-        <div class="p-h1">
-          <p>WELCOME TO</p>
-          <h1>
-            <span>Xaint</span>
-            Desmond<span> Music</span>
-          </h1>
+    <!--// HEADER END -->
+    <!-- ================= ABOUT  ================= -->
+    <section class="section-padding about clearfix" id="about">
+      <!-- Floating Particles -->
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_a"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_c"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_4.svg"
+        alt="triangle"
+        class="particle pos_d"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_5.svg"
+        alt="triangle"
+        class="particle pos_e"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_1.svg"
+        alt="circle"
+        class="particle pos_f"
+        data-rellax-speed="4"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_2.svg"
+        alt="circle"
+        class="particle pos_g"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_5.svg"
+        alt="circle"
+        class="particle pos_i"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <!-- // end .particles -->
+      <div class="container">
+        <div class="row">
+          <div class="band-wrap">
+            <div class="col-md-8 col-md-pull">
+              <h2 class="section-title">XAINT DESMOND MUSIC</h2>
+              <p class="section-subtitle">
+                Everything about Xaint Desmond speaks and breeds music
+              </p>
+              <p class="section-subtitle-thin">
+                Music has always been the life support of this brand. Starting
+                from far away Nigeria, Xaint Desmond music has become a movement
+                to reckon with in and out of Europe, appearing for shows in
+                Italy, Spain and Germany
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <section id="about" class="section">
+    <!--// ABOUT END -->
+    <!-- ================= OUR TEAM ================= -->
+    <!-- <section class="section-padding team clearfix has-parallax" id="team">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
-            <img src="./Images/desmond-1.jpeg" />
+          <div class="col-md-12">
+            <div class="team-wrap">
+              <h2 class="team-title"><span>ROCKING TEAM</span></h2>
+              <p class="team-subtitle">
+                We are singers and musicians from the different part of theworld
+                united to make wonderful music experiences for everyone in the
+                world.
+              </p>
+              <div class="team-slider team-slick">
+                <div>
+                  <a href="#team-modal-1" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-1.jpg"
+                      class="img-responsive"
+                      alt="team-1"
+                    />
+                    <div class="slide-img-title">
+                      <span>Roy Gutierrez</span>
+                      <span class="slide-img-subtitle">The Guitarist</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-2" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-2.jpg"
+                      class="img-responsive"
+                      alt="team-2"
+                    />
+                    <div class="slide-img-title">
+                      <span>Hannah Valdez</span>
+                      <span class="slide-img-subtitle">Female Singer</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-3" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-3.jpg"
+                      class="img-responsive"
+                      alt="team-3"
+                    />
+                    <div class="slide-img-title">
+                      <span>Phillip Lucas</span>
+                      <span class="slide-img-subtitle">Rock Singer</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-1" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-1.jpg"
+                      class="img-responsive"
+                      alt="team-1"
+                    />
+                    <div class="slide-img-title">
+                      <span>Roy Gutierrez</span>
+                      <span class="slide-img-subtitle">The Guitarist</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-2" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-2.jpg"
+                      class="img-responsive"
+                      alt="team-2"
+                    />
+                    <div class="slide-img-title">
+                      <span>Hannah Valdez</span>
+                      <span class="slide-img-subtitle">Female Singer</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-3" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-3.jpg"
+                      class="img-responsive"
+                      alt="team-3"
+                    />
+                    <div class="slide-img-title">
+                      <span>Phillip Lucas</span>
+                      <span class="slide-img-subtitle">Rock Singer</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-1" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-1.jpg"
+                      class="img-responsive"
+                      alt="team-1"
+                    />
+                    <div class="slide-img-title">
+                      <span>Roy Gutierrez</span>
+                      <span class="slide-img-subtitle">The Guitarist</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-2" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-2.jpg"
+                      class="img-responsive"
+                      alt="team-2"
+                    />
+                    <div class="slide-img-title">
+                      <span>Hannah Valdez</span>
+                      <span class="slide-img-subtitle">Female Singer</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a href="#team-modal-3" data-effect="mfp-zoom-out"
+                    ><img
+                      src="images/team-3.jpg"
+                      class="img-responsive"
+                      alt="team-3"
+                    />
+                    <div class="slide-img-title">
+                      <span>Phillip Lucas</span>
+                      <span class="slide-img-subtitle">Rock Singer</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Xaint Desmond</h1>
-            <p class="about-text">
-              Hailing from the vibrant city of Benin in Edo State, Nigeria,
-              Xaint Desmond emerges as a captivating force in the realm of
-              music. With a unique blend of talent, passion, and charisma, Xaint
-              Desmond has etched his name as a distinguished music artiste,
-              leaving an indelible mark on the Nigerian music scene.
-              <br /><br />
-              Under the spotlight, Xaint Desmond embodies a musical journey that
-              transcends boundaries and resonates with audiences far and wide.
-              His brand name is not just a moniker; it's a symbol of the
-              rhythmic magic he weaves into every note and lyric. <br /><br />
-              Xaint Desmond is more than an artist; he is a storyteller, using
-              his craft to paint vivid narratives that connect with the hearts
-              of his listeners. <br /><br />
-              Keep an eye and ear out for Xaint Desmond as he continues to
-              redefine the soundscape, proving that his talent knows no bounds.
-              From Benin to the world, this musical virtuoso is on a journey to
-              leave an enduring legacy in the hearts of music lovers everywhere.
+        </div>
+      </div>
+    </section> -->
+    <!--// OUR TEAM END -->
+    <!-- ================= TEAM PROFILE POPUP ================= -->
+    <!-- || Team Member 01 Profile Popup Card ||-->
+    <div id="team-modal-1" class="white-popup mfp-with-anim mfp-hide">
+      <div class="row">
+        <div class="col-sm-5">
+          <img
+            src="images/team-1.jpg"
+            class="img-responsive team-modal-img"
+            alt="team-pic"
+          />
+        </div>
+        <div class="col-sm-7">
+          <div class="team-popup-desc">
+            <h3 class="team-popup-title">Roy Gutierrez</h3>
+            <h4 class="muted">The Guitarist</h4>
+            <p class="lead">
+              Appropriately implement cross-unit services after next-generation
+              human capital.
+            </p>
+            <!-- // end .lead -->
+            <p class="team-popup-text">
+              Distinctively coordinate team building architectures rather than
+              flexible growth strategies. Appropriately implement cross-unit
+              services after next-generation human capital.
+            </p>
+            <div class="social-icons team-social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-1 flaticon-sm-shape shape1"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-media-1 flaticon-sm-shape shape2"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-network-1 flaticon-sm-shape shape3"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- || Team Member 02 Profile Popup Card ||-->
+    <div id="team-modal-2" class="white-popup mfp-with-anim mfp-hide">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="images/team-2.jpg"
+            class="img-responsive team-modal-img"
+            alt="team-pic"
+          />
+        </div>
+        <div class="col-sm-8">
+          <div class="team-popup-desc">
+            <h3 class="team-popup-title">Hannah Valdez</h3>
+            <h4 class="muted">Female Singer</h4>
+            <p class="team-popup-text">
+              Distinctively coordinate team building architectures rather than
+              flexible growth strategies. Appropriately implement cross-unit
+              services after next-generation human capital.
+            </p>
+            <div class="social-icons team-social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-1 flaticon-sm-shape shape1"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-media-1 flaticon-sm-shape shape2"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-network-1 flaticon-sm-shape shape3"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- || Team Member 03 Profile Popup Card ||-->
+    <div id="team-modal-3" class="white-popup mfp-with-anim mfp-hide">
+      <div class="row">
+        <div class="col-sm-5">
+          <img
+            src="images/team-3.jpg"
+            class="img-responsive team-modal-img"
+            alt="team-pic"
+          />
+        </div>
+        <div class="col-sm-7">
+          <div class="team-popup-desc">
+            <h3 class="team-popup-title">Phillip Lucas</h3>
+            <h4 class="muted">Rock Singer</h4>
+            <p class="lead">
+              Appropriately implement cross-unit services after next-generation
+              human capital.
+            </p>
+            <!-- // end .lead -->
+            <p class="team-popup-text">
+              Distinctively coordinate team building architectures rather than
+              flexible growth strategies. Appropriately implement cross-unit
+              services after next-generation human capital.
+            </p>
+            <div class="social-icons team-social">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-1 flaticon-sm-shape shape1"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-media-1 flaticon-sm-shape shape2"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="flaticon-social-network-1 flaticon-sm-shape shape3"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================= OUR ADMIRE 01 ================= -->
+    <section class="admire clearfix" id="featured-album">
+      <div class="object-fit-container">
+        <a href="javascript:;" class="audio-play-btn" data-playlist-id="10">
+          <img
+            src="images/desmond-1.jpeg"
+            class="img-responsive compact-img"
+            alt="admire-bg"
+          />
+          <span class="flaticon-play-1 album-play-button"></span>
+        </a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-md-push-5">
+            <div class="admire-block">
+              <h3 class="admire-title">About Xaint Desmond</h3>
+              <!-- <h5 class="admire-subtitle">Henry Wadsworth Longfellow</h5>
+              <ul class="star-review">
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+              </ul> -->
+              <p class="admire-subtitle02">
+                Xaint Desmond, from Benin, Nigeria, is a talented gospel artist
+                known for his unique style, captivating storytelling, and impact
+                on the Nigerian music scene, aiming to leave a lasting legacy
+                globally.
+              </p>
+              <!-- <a href="#" class="btn btn-danger">BUY MP3 ALBUM</a>
+              <a href="#" class="btn btn-warning">BUY CD ALBUM</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// OUR ADMIRE 01 END -->
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="testimonial clearfix has-parallax" id="testimonial">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-space">
+              <div class="flaticon-quote"></div>
+              <!-- // end .testimonial-icon -->
+              <!-- <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                  <h2 class="testimonial-title">
+                    Music gives a soul to the universe, wings to the mind,
+                    flight to the imagination and life to everything
+                  </h2>
+                </div>
+                <div class="testimonial-slide">
+                  <h2 class="testimonial-title">
+                    When I hear music, I fear no danger. I am invulnerable. I
+                    see no foe. I am related to the earliest times, and to the
+                    latest
+                  </h2>
+                </div>
+                <div class="testimonial-slide">
+                  <h2 class="testimonial-title">
+                    The most exciting rhythms seem unexpected and complex, the
+                    most beautiful melodies simple and inevitable
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div> -->
+    </section>
+    <!--// TESTIMONIAL END -->
+    <!-- ================= OUR ADMIRE 02 ================= -->
+    <!-- <section class="admire clearfix" id="featured-album2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="admire-block">
+              <h3 class="admire-title-clr">Rhythm and harmony</h3>
+              <h5 class="admire-subtitle-clr">The Republic State</h5>
+              <ul class="star-review">
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+                <li><i class="flaticon-favorite"></i></li>
+              </ul>
+              <p class="admire-subtitle02">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                sed nibh pharetra, congue lectus at, malesuada augue. Donec
+                tincidunt faucibus lacus. Curabitur vitae euismod lectus send me
+                voulpalt.
+              </p>
+              <a href="#" class="btn btn-success">BUY MP3 ALBUM</a>
+              <a href="#" class="btn btn-primary">BUY CD ALBUM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-wrap-right">
+        <a href="javascript:;" class="audio-play-btn" data-playlist-id="10">
+          <img
+            src="images/admire-02.jpg"
+            class="img-responsive compact-img"
+            alt="admire-02"
+          />
+          <span class="flaticon-play-1 album-play-button"></span>
+        </a>
+      </div>
+    </section> -->
+    <!--// OUR ADMIRE 02 END -->
+    <!-- ================= EVENT ================= -->
+    <section class="section-padding event has-parallax" id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="event-title"><span>EVENTS</span></h2>
+            <p class="event-subtitle">
+              Here’s a list of upcoming events by our band in different
+              locations. Please choose a location near to you. We’re thrilled to
+              see you there. Let’s rock!
             </p>
           </div>
         </div>
+        <div class="row">
+          <div class="event-wrap">
+            <div class="event-block">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-date">OCT 24</div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6">
+                <div class="event-caption">Banquet of praise festival</div>
+                <p class="event-subcaption">
+                  Militants choir
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-country">Turin</div>
+                <p class="event-city">Italy</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <a href="#" class="btn btn-info btn-disabled" disabled>SOLD OUT</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="event-block">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-date">JAN 09</div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6">
+                <div class="event-caption">Album Launch</div>
+                <p class="event-subcaption">
+                  I go follow you
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-country">Benin</div>
+                <p class="event-city">Nigeria</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <button class="btn btn-info btn-disabled" disabled>
+                  SOLD OUT
+                </button>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- <div class="event-block">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-date">FEB 26</div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6">
+                <div class="event-caption">Bandung Berisik</div>
+                <p class="event-subcaption">Pitchfork Festival 2016</p>
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-country">Newyork</div>
+                <p class="event-city">United States</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <a href="#" class="btn btn-info">BUY TICKETS</a>
+              </div>
+            </div> -->
+            <div class="clearfix"></div>
+            <!-- <div class="event-block">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-date">FEB 10</div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6">
+                <div class="event-caption">Hellprint Festival</div>
+                <p class="event-subcaption">
+                  Elton John and his band! LIVE Recording!
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-country">Riyadh</div>
+                <p class="event-city">Saudi Arabia</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <a href="#" class="btn btn-info">BUY TICKETS</a>
+              </div>
+            </div> -->
+            <div class="clearfix"></div>
+            <!-- <div class="event-block">
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-date">FEB 17</div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-6">
+                <div class="event-caption">Indie Ground</div>
+                <p class="event-subcaption">
+                  Lollapalooza, the three-day music festival
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="event-country">Malabo</div>
+                <p class="event-city">Equatorial Guinea</p>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-2">
+                <a href="#" class="btn btn-info">BUY TICKETS</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
       </div>
     </section>
-
-    <section id="music" class="section">
+    <!--// EVENT END -->
+    <!-- ================= ALBUM ================= -->
+    <section class="section-padding album" id="album">
+      <!-- Floating Particles -->
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_c"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_b"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_4.svg"
+        alt="triangle"
+        class="particle pos_d"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_5.svg"
+        alt="triangle"
+        class="particle pos_e"
+        data-rellax-speed="4"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_1.svg"
+        alt="circle"
+        class="particle pos_a"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_2.svg"
+        alt="circle"
+        class="particle pos_f"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
       <div class="container">
-        <h2 class="sub-title">Music</h2>
-        <div class="services-list">
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/i-go-follow-you-feat-mc-de-way/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-1.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-              />
-            </a>
-            <div>
-              <h2>I go follow you feat Mc De Way</h2>
-            </div>
-          </div>
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/henrumwen-hear-my-prayer/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-2.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-              />
-            </a>
-
-            <div>
-              <h2>Henrumwen</h2>
-            </div>
-          </div>
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/ogienimuentiyan-feat-bro-destiny/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-3.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-              />
-            </a>
-
-            <div>
-              <h2>My Trust in You</h2>
-            </div>
-          </div>
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/turn-my-life-aro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-4.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-              />
-            </a>
-
-            <div>
-              <h2>Turn My Life Around</h2>
-            </div>
-          </div>
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/iziegbe-feat-freeborn-strings-2/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-5.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-            /></a>
-
-            <div>
-              <h2>Iziegbe feat Freeborn Strings</h2>
-            </div>
-          </div>
-          <div class="work">
-            <a
-              href="http://distrokid.com/hyperfollow/xaintdesmond/rabomiekpomwen-feat-sunday-osaivbie-2/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./Images/cover-6.jpeg"
-                alt=""
-                width="300px"
-                height="300px"
-              />
-            </a>
-
-            <div>
-              <h2>Rabomiekpomwen feat Sunday Osaivbie</h2>
+        <!-- // end .atvImg -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="album-wrap">
+              <h2 class="album-title"><span>My music</span></h2>
+              <p class="album-subtitle">
+                Stream my music on spotify, AppleMusic, Boomplay and Audiomack. Enjoy and praise the lord with me
+              </p>
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/i-go-follow-you-feat-mc-de-way/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-1.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-1.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">I go Follow You</span>
+                    <p class="album-block-subtitle">Xaint Desmond ft MC DE WAY</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 -->
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/henrumwen-hear-my-prayer/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-2.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-2.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">Henrumwen</span>
+                    <p class="album-block-subtitle">Xaint Desmond ft free Born Strings</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 -->
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/ogienimuentiyan-feat-bro-destiny/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-3.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-3.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">My trust in you</span>
+                    <p class="album-block-subtitle">Xaint desmond ft Bro Destiny</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 -->
+                 <!-- // end .col-md-4 -->
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/turn-my-life-around-2/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-4.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-4.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">Turn my life aroound</span>
+                    <p class="album-block-subtitle">Xaint desmond ft freeborn strings</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 --><!-- // end .col-md-4 -->
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/iziegbe-feat-freeborn-strings-2/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-5.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-5.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">Iziegbe</span>
+                    <p class="album-block-subtitle">Xaint desmond ft freeborn strings</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 --><!-- // end .col-md-4 -->
+                <div class="col-md-4">
+                  <a href="http://distrokid.com/hyperfollow/xaintdesmond/rabomiekpomwen-feat-sunday-osaivbie-2/" class="album-cover">
+                    <div class="atvImg">
+                      <img
+                        src="images/cover-6.jpeg"
+                        class="img-responsive"
+                        alt="album"
+                      />
+                      <div
+                        class="atvImg-layer"
+                        data-img="images/cover-6.jpeg"
+                      ></div>
+                    </div>
+                  </a>
+                  <div class="album-block">
+                    <span class="album-block-title">Rabomikpomwen</span>
+                    <p class="album-block-subtitle">Xaint desmond fr Sunday Osaivbie</p>
+                  </div>
+                </div>
+                <!-- // end .col-md-4 -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="videos" class="section">
-      <div class="container">
-        <h2 class="sub-title">Videos</h2>
-        <div class="services-list">
-          <div class="work">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/TYV1sQtPIxo?si=_rQvSjFIgM1u54rf"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <div>
-              <h2>Henrumwen</h2>
-            </div>
-          </div>
-          <div class="work">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/XSRko463fY4?si=E64XDrVtL2oScsiL"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <div>
-              <h2>Odihorua Feat Stanley O. Iyonawam</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
+    <!--// ALBUM END -->
+   
+    <!-- ================= PHOTOS ================= -->
+    <section class="section-padding photos" id="gallery">
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_f"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_4.svg"
+        alt="triangle"
+        class="particle pos_d"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_5.svg"
+        alt="triangle"
+        class="particle pos_e"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_1.svg"
+        alt="circle"
+        class="particle pos_a"
+        data-rellax-speed="4"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_2.svg"
+        alt="circle"
+        class="particle pos_c"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_3.svg"
+        alt="circle"
+        class="particle pos_j"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
       <div class="container">
         <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>xaintdesmond360@gmail.com
+          <div class="col-md-12">
+            <h2 class="photos-title"><span>PHOTOS</span></h2>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12">
+            <div class="rotation-wrap">
+              <div class="photos-wrap">
+                <ul>
+                  <li>
+                    <a href="images/desmond-1.jpeg" class="image-link"
+                      ><img
+                        src="images/desmond-1.jpeg"
+                        class="img-responsive"
+                        alt="rotate-img1"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="images/desmond-4.jpeg" class="image-link"
+                      ><img
+                        src="images/desmond-4.jpeg"
+                        class="img-responsive"
+                        alt="rotate-img2"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="images/Image 1.jpg" class="image-link"
+                      ><img
+                        src="images/Image 1.jpg"
+                        class="img-responsive"
+                        alt="rotate-img3"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="images/Image 2.jpg" class="image-link"
+                      ><img
+                        src="images/Image 2.jpg"
+                        class="img-responsive"
+                        alt="rotate-img4"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="img-rotation clearfix">
+                <ul>
+                  <li>
+                    <a href="images/launch-1.jpeg" class="image-link"
+                      ><img
+                        src="images/launch-1.jpeg"
+                        class="img-responsive"
+                        alt="rotate-img5"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="images/launch 2.jpeg" class="image-link"
+                      ><img
+                        src="images/launch 2.jpeg"
+                        class="img-responsive"
+                        alt="rotate-img6"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="images/launch-3.jpeg" class="image-link"
+                      ><img
+                        src="images/launch-3.jpeg"
+                        class="img-responsive"
+                        alt="rotate-img7"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// PHOTOS END -->
+    <!-- ================= FAN PAGE ================= -->
+    <!--// FAN PAGE END -->
+    <!-- ================= CONTACT ================= -->
+    <section class="section-padding contact" id="contact">
+      <!-- Floating Particles -->
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_a"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_1.svg"
+        alt="triangle"
+        class="particle pos_c"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_4.svg"
+        alt="triangle"
+        class="particle pos_d"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/triangle_5.svg"
+        alt="triangle"
+        class="particle pos_e"
+        data-rellax-speed="3"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_1.svg"
+        alt="circle"
+        class="particle pos_f"
+        data-rellax-speed="4"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_2.svg"
+        alt="circle"
+        class="particle pos_g"
+        data-rellax-speed="2"
+        data-rellax-percentage="0.5"
+      />
+      <img
+        src="images/particles/circle_5.svg"
+        alt="circle"
+        class="particle pos_j"
+        data-rellax-speed="1"
+        data-rellax-percentage="0.5"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="contact-title"><span>SAY HELLO</span></h2>
+            <p class="contact-subtitle">
+              Love to see my show near your location? or just want to say
+              hello? Send me an email below. I’d love to
+              hear from you.
             </p>
-            <p><i class="fa-solid fa-phone"></i>+393277737882</p>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form
+                name="submit-to-google-sheet"
+                class="form-signin"
+                id="contact_form"
+                
+              >
+                <label class="sr-only">Email address</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="Name"
+                  class="form-control form-width form-primary"
+                  placeholder="Your Name"
+                  required=""
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  class="form-control form-width"
+                  placeholder="Your Email"
+                  required=""
+                />
+                <textarea
+                  class="form-control form-comments"
+                  id="message"
+                  name="Message"
+                  placeholder="Your Message"
+                  required=""
+                ></textarea>
+                <div class="btn-wrap">
+                  <button
+                    type="submit"
+                    class="btn btn-default"
+                    id="js-contact-btn"
+                  >
+                    SEND
+                  </button>
+                </div>
+                <div
+                  id="js-contact-result"
+                  data-success-msg="Success! We've received your email."
+                  data-error-msg="Oops! Something went wrong, Email: mail@mywebsite.com"
+                ></div>
+                <!-- // end #js-contact-result -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// CONTACT END -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="section-padding has-parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="subscribe-title"><span>SUBSCRIBE</span></h2>
+          </div>
+          <div class="col-md-12 clearfix">
+            <div class="contact-form subscribe-email">
+              <form
+                class="form-signin"
+                id="subscribeform"
+                action="php/subscribe.php"
+              >
+                <div class="subscribe-block">
+                  <label class="sr-only">Email address</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    class="form-control form-subscribe form-primary"
+                    placeholder="Your Name"
+                    required=""
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control form-subscribe"
+                    placeholder="Your Email"
+                    required=""
+                  />
+                </div>
+                <div class="btn-wrap clearifx">
+                  <button
+                    type="submit"
+                    class="btn btn-default btn-subscribe"
+                    id="js-subscribe-btn"
+                  >
+                    SUBSCRIBE
+                  </button>
+                </div>
+                <div
+                  id="js-subscribe-result"
+                  data-success-msg="Great! Please confirm your email to finish."
+                  data-error-msg="Oops! Something went wrong."
+                ></div>
+                <!-- // end #js-contact-result -->
+              </form>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="shape-line">
+              <img
+                src="images/shape-line.png"
+                class="img-responsive"
+                alt="svg-style-line"
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
             <div class="social-icons">
-              <a href="https://wa.me/message/6UMI7EAOAQALD1" target="_blank"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100064075208661"
-                target="_blank"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a
-                href="https://instagram.com/xaintdesmondofficial?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://open.spotify.com/artist/237tsfwEkpNqAN4B1D9IFq?si=O14ZRsidSNuzBartz35ZGQ"
-                target="_blank"
-                ><i class="fa-brands fa-spotify"></i
-              ></a>
-              <a
-                href="https://youtube.com/@XaintDesmondofficial?si=QfX66OaXzUJxkGz4"
-                target="_blank"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100064075208661"
+                    ><span
+                      class="flaticon-social-1 flaticon-sm-shape shape1"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://x.com/XAINTDESMOND11?t=r1xpGo0dIQf44L5UvwBZSg&s=09"
+                    ><span
+                      class="flaticon-social-media-1 flaticon-sm-shape shape2"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/xaintdesmondofficial?igsh=MW1xNW42dHNwZ214ag=="
+                    ><span
+                      class="flaticon-social-network-1 flaticon-sm-shape shape3"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://open.spotify.com/artist/237tsfwEkpNqAN4B1D9IFq?si=2F5YgXGkSmCELklwMcIXDA"
+                    ><span
+                      class="flaticon-social-media flaticon-sm-shape shape4"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@xaintdesmondofficial"
+                    ><span
+                      class="flaticon-social flaticon-sm-shape shape5"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input
-                type="text"
-                name="Name"
-                id=""
-                placeholder="Your Name"
-                required
+          <div class="col-md-12">
+            <div class="shape-line">
+              <img
+                src="images/shape-line.png"
+                class="img-responsive"
+                alt="svg-style-line"
               />
-              <input
-                type="email"
-                name="Email"
-                id=""
-                placeholder="Your email"
-                required
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="address">
+              <h4>Xaint Desmond</h4>
+              <span>Turin, Itally</span>
+              <h4>+39 327 773 7882</h4>
+              <span>obadolor360@gmail.com</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="shape-line">
+              <img
+                src="images/shape-line.png"
+                class="img-responsive"
+                alt="svg-style-line"
               />
-              <textarea
-                name="Message"
-                id=""
-                rows="6"
-                placeholder="Your message"
-              ></textarea>
-              <button type="submit" class="btn btn-2">Submit</button>
-            </form>
-            <span id="msg"></span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="address">
+              <h5>Copyright © 2024. All rights reserved.</h5>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="copyright">
-      <p>Copyright © 2023</p>
-    </section>
-
-    <script src="./index.js"></script>
+    </footer>
+    <!--// FOOTER END -->
+    <a class="back_to_top" href="#top">
+      <img src="images/back-to-top.png" alt="Back to top" />
+    </a>
+    <!-- // end .back_to_top -->
+    <!-- jQuery & Other Javascript Files -->
+    <script src="js/lib/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="js/plugins/flexslider-min.js"></script>
+    <script src="js/plugins/slick.min.js"></script>
+    <script src="js/plugins/magnific-popup.min.js"></script>
+    <script src="js/plugins/parallax.js"></script>
+    <script src="js/plugins/rellax.min.js"></script>
+    <script src="js/plugins/atvimg.js"></script>
+    <script src="js/plugins/jquery.jplayer.min.js"></script>
+    <script src="js/plugins/jplayer.playlist.min.js"></script>
+    <script src="js/audio-player.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/subscribe.js"></script>
+    <!-- Main Duotone script -->
+    <form >
+      <input name="email" type="email" placeholder="Email" required>
+      <button type="submit">Send</button>
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxyOQrBOb4dkBTkmP5nOwfPpGidrweuodxz37svhj9PeBxmLH_Jm6V78HgUdvTcHkJ6/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
